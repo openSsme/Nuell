@@ -1,0 +1,257 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/movement.gd" type="Script" id=1]
+[ext_resource path="res://Ether/Ghost.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Physical/Container.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Physical/GContainer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Physical/PContainer.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scripts/StaticBody2D.gd" type="Script" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10.0203, 509.689 )
+
+[node name="Planes" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="Physical" type="Node2D" parent="."]
+
+[node name="Container" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 600, 300 )
+
+[node name="Container2" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 602, 348 )
+
+[node name="Container3" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 602, 395 )
+
+[node name="Container4" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 600, 440 )
+
+[node name="Container5" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 600, 481 )
+
+[node name="GContainer" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1027, 305 )
+
+[node name="GContainer2" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1028, 347 )
+
+[node name="GContainer3" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1030, 391 )
+
+[node name="GContainer4" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1031, 435 )
+
+[node name="GContainer5" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1026, 476 )
+
+[node name="Container6" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 663.568, 168.627 )
+
+[node name="Container7" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 665.568, 216.627 )
+
+[node name="Container8" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 665.568, 263.627 )
+
+[node name="Container9" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 663.568, 308.627 )
+
+[node name="Container10" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 663.568, 349.627 )
+
+[node name="GContainer6" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1090.57, 173.627 )
+
+[node name="GContainer7" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1091.57, 215.627 )
+
+[node name="GContainer8" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1093.57, 259.627 )
+
+[node name="GContainer9" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1094.57, 303.627 )
+
+[node name="GContainer10" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 1089.57, 344.627 )
+
+[node name="Container11" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 530.076, 168.627 )
+
+[node name="Container12" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 532.076, 216.627 )
+
+[node name="Container13" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 532.076, 263.627 )
+
+[node name="Container14" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 530.076, 308.627 )
+
+[node name="Container15" parent="Physical" instance=ExtResource( 3 )]
+position = Vector2( 530.076, 349.627 )
+
+[node name="GContainer11" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 957.076, 173.627 )
+
+[node name="GContainer12" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 958.076, 215.627 )
+
+[node name="GContainer13" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 960.076, 259.627 )
+
+[node name="GContainer14" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 961.076, 303.627 )
+
+[node name="GContainer15" parent="Physical" instance=ExtResource( 4 )]
+position = Vector2( 956.076, 344.627 )
+
+[node name="PContainer" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1169.01, 663.32 )
+
+[node name="PContainer2" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 453.008, 653.32 )
+
+[node name="PContainer3" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 809.008, 694.32 )
+
+[node name="PContainer4" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1212.45, 663.32 )
+
+[node name="PContainer5" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 496.446, 653.32 )
+
+[node name="PContainer6" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 852.446, 694.32 )
+
+[node name="PContainer7" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1127.69, 662.26 )
+
+[node name="PContainer8" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 411.689, 652.26 )
+
+[node name="PContainer9" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 767.689, 693.26 )
+
+[node name="PContainer10" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1042.93, 661.201 )
+
+[node name="PContainer11" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 326.932, 651.201 )
+
+[node name="PContainer12" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 682.932, 692.201 )
+
+[node name="PContainer13" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1086.37, 661.201 )
+
+[node name="PContainer14" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 370.37, 651.201 )
+
+[node name="PContainer15" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 726.37, 692.201 )
+
+[node name="PContainer16" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1001.61, 660.141 )
+
+[node name="PContainer17" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 285.613, 650.141 )
+
+[node name="PContainer18" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 641.613, 691.141 )
+
+[node name="PContainer19" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1288.73, 662.26 )
+
+[node name="PContainer20" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 572.728, 652.26 )
+
+[node name="PContainer21" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 928.728, 693.26 )
+
+[node name="PContainer22" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1332.17, 662.26 )
+
+[node name="PContainer23" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 616.166, 652.26 )
+
+[node name="PContainer24" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 972.166, 693.26 )
+
+[node name="PContainer25" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 1247.41, 661.201 )
+
+[node name="PContainer26" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 531.409, 651.201 )
+
+[node name="PContainer27" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 887.409, 692.201 )
+
+[node name="PContainer28" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 810.418, 792.465 )
+
+[node name="PContainer29" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 853.856, 792.465 )
+
+[node name="PContainer30" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 769.099, 791.405 )
+
+[node name="PContainer31" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 684.342, 790.346 )
+
+[node name="PContainer32" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 727.78, 790.346 )
+
+[node name="PContainer33" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 643.023, 789.286 )
+
+[node name="PContainer34" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 930.137, 791.406 )
+
+[node name="PContainer35" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 973.575, 791.406 )
+
+[node name="PContainer36" parent="Physical" instance=ExtResource( 5 )]
+position = Vector2( 888.818, 790.346 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( -4, 450 )
+scale = Vector2( 1, 0.880001 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( -3.5636, -4.04953 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 1600, 450 )
+scale = Vector2( 1, 0.880001 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2( 8.90906, 2.02478 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 800, 910 )
+scale = Vector2( 84.6865, -0.0399994 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2( 0, -89.0898 )
+scale = Vector2( 1, 0.999939 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2( 800, 0 )
+scale = Vector2( 84.6865, -0.0399994 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2( -0.1052, 400.91 )
+scale = Vector2( 1, 0.999939 )
+shape = SubResource( 1 )
+
+[node name="Ether" type="Node2D" parent="."]
+
+[node name="Ghost" parent="Ether" instance=ExtResource( 2 )]
+position = Vector2( 271.97, 455.777 )
